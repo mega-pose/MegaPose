@@ -7,7 +7,7 @@ We present our ongoing effort of constructing a large-scale multi-view sports vi
 The goal of our MegaPose dataset is to introduce a new challenging and large-scale benchmark with high-quality GT to the community of sports intelligence analysis and the community of 3D HPE. MegaPose aims to include diverse and high-quality multi-view video data, which are collected from indoor and outdoor scenarios, as well as single and multi-person scenarios of various sports. In addition, part of the data is collected from some challenging scenarios such as fast movement, special poses, heavy occlusions, varied clothing, and closely interacting motions. MegaPose is a professional sports video dataset, because all players are professional athletes. MegaPose is constructed continuously and in stages. At present, we have completed the construction of the first version, MegaPose v1, which was captured indoors from 9 kinds of sports.
 
 
-|Sports category	|Single person	|Multi-person	|Subtotal	|Number of frames|
+|Sports category	|Single person (clips)	|Multi-person	(clips)|Subtotal	(clips)|Number of frames|
 |---|---|---|---|---|
 |Rhythmic gymnastics	|37	|0	|37	|1,095,204|
 |Football  |17	|9	|26	|1,142,484|
