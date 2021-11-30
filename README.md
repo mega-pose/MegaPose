@@ -22,7 +22,7 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 
 ## Evaluation
 
-The lastest three 3D human pose estimation algorithms are evaluated on MegaPose V1 by their pretrained models. The following table shows the evaluation result (MPJPE (mm)) on 8 kinds of sports, and the table also shows the three models' performance on Human3.6 dataset.
+The lastest three 3D human pose estimation algorithms are evaluated on MegaPose V1 with their pretrained models. The following table shows the evaluation result (MPJPE (mm)) on 8 kinds of sports, and the table also shows the three models' performance on Human3.6 dataset.
 
 |Baseline|Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|Human3.6|
 |---|---|---|---|---|---|---|---|---|---|---|
