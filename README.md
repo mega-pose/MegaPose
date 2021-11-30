@@ -24,9 +24,9 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 
 |Baseline|Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|Human3.6|
 |---|---|---|---|---|---|---|---|---|---|---|
-|Pose3D-RIE|336.57|347.57|420.45|337.13|385.92|320.32|343.69|328.97|352.58|30.1|
-|PoseAug|477.58|450.49|476.87|488.61|482.63|465.42|465.73|462.97|471.29|50.2|
-|Anatomy3D|358.3|367.89|433.15|369.6|398.34|350.36|359.04|361.03|374.71|44.1|
+|[Pose3D-RIE](https://github.com/paTRICK-swk/Pose3D-RIE)|336.57|347.57|420.45|337.13|385.92|320.32|343.69|328.97|352.58|30.1|
+|[PoseAug](https://github.com/jfzhang95/PoseAug)|477.58|450.49|476.87|488.61|482.63|465.42|465.73|462.97|471.29|50.2|
+|[Anatomy3D](https://github.com/sunnychencool/Anatomy3D)|358.3|367.89|433.15|369.6|398.34|350.36|359.04|361.03|374.71|44.1|
 
 
 ## Datasetlink
