@@ -23,23 +23,6 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 |Badminton	|6	|2	|8	|1,149,912|
 |Total	|131	|97	|228	|7,264,980|
 
-## Evaluation
-
-### Single-View & Single-Person 3D Human Pose Estimation 
-The lastest three single-view & single-person 3D human pose estimation algorithms are evaluated on MegaPose V1 with their **pretrained models**. The following table shows the evaluation result on 8 kinds of sports, and the table also shows the three algorithms' performance on Human3.6 dataset.
-
-|Baseline (*MPJPE(mm)*)|Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|Human3.6|
-|---|---|---|---|---|---|---|---|---|---|---|
-|[Pose3D-RIE](https://github.com/paTRICK-swk/Pose3D-RIE)|336.57|347.57|420.45|337.13|385.92|320.32|343.69|328.97|352.58|30.1|
-|[PoseAug](https://github.com/jfzhang95/PoseAug)|477.58|450.49|476.87|488.61|482.63|465.42|465.73|462.97|471.29|50.2|
-|[Anatomy3D](https://github.com/sunnychencool/Anatomy3D)|358.3|367.89|433.15|369.6|398.34|350.36|359.04|361.03|374.71|44.1|
-
-|Baseline (*P_MPJPE(mm)*)|Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|
-|---|---|---|---|---|---|---|---|---|---|
-|[Pose3D-RIE](https://github.com/paTRICK-swk/Pose3D-RIE)|146.01|146.03|138.1|153.03|152.18|128.79|125.11|113.45|137.84|
-|[PoseAug](https://github.com/jfzhang95/PoseAug)|387.12|372.01|351.8|403.52|354.83|394.25|378.04|378.65|377.53|
-|[Anatomy3D](https://github.com/sunnychencool/Anatomy3D)|147.42|154.59|144.08|152.77|153.56|135.95|129.86|126.38|143.08|
-
 
 ## Datasetlink
 Temporarily not unavailable, comming soon:+1: <br/>
