@@ -22,6 +22,7 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 
 ## Evaluation
 
+### Single-View & Single-Person 3D Human Pose Estimation 
 The lastest three 3D human pose estimation algorithms are evaluated on MegaPose V1 with their **pretrained models**. The following table shows the evaluation result on 8 kinds of sports, and the table also shows the three algorithms' performance on Human3.6 dataset.
 
 |Baseline (MPJPE (mm))|Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|Human3.6|
