@@ -22,7 +22,7 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 
 ## Evaluation
 
-||Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|Human3.6|
+|Baseline|Rhythmic gymnastics|Football|Basketball|Martial Art|Sports Aerobics|Dance sport|Sanda|Badminton|Average|Human3.6|
 |---|---|---|---|---|---|---|---|---|---|---|
 |Pose3D-RIE|336.57|347.57|420.45|337.13|385.92|320.32|343.69|328.97|352.58|30.1|
 |PoseAug|477.58|450.49|476.87|488.61|482.63|465.42|465.73|462.97|471.29|50.2|
