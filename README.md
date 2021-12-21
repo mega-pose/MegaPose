@@ -23,6 +23,36 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 |Badminton	|6	|2	|8	|1,149,912|
 |Total	|131	|97	|228	|7,264,980|
 
+## Additional Experiments
+### A1. Multi-View & Multi-Person (MVMP) methods
+#### A1.1 Experiments on the 12-view data and using part of MegaPose v1 data for training
+  In MegaPose v1, we have evaluated four Multi-View & Multi-Person (MVMP) methods on the 12-view data including MVPose [8], VoxelPose [40], Plane Sweep Stereo based method (PSS) [27], and Part-Aware Measurement based method (PAM) [7]. 
+  
+  In previous evaluation, we directly used the source code of MVPose for evaluation. For PAM method, we adopted the parameters of its source code on shelf dataset. For VoxelPose and PSS methods, we used the training strategies provided by their source codes on shelf and campus datasets, that is, we used independent 3D poses in Panoptic datasets to train 3D model in our scene. We used the parameters of VoxelPose and PSS set in the shelf dataset, and modify the space center in VoxelPose and pose depth in PSS according to our scene attributes for training and test. PAM, VoxelPose and PSS methods use the same 2D HPE result, which is the detection result of Yolov3+HRNet used in PAM.  
+  
+  It can be seen that we did not use the GT of MegaPose v1 for training in previous evaluation. Among four MVMP methods, VoxelPose and PSS are two methods that need to be trained. In this additional experiment, we use 3D poses of MegaPose v1 to train 3D model of VoxelPose and PSS methods. MegaPose v1 dataset consists of 97 multi-person video clips belonging to 7 different sports. For each sports, we select one video clip for training. Therefore, the MegaPose v1 training set contains 7 video clips, and have 6532 frames in single view and 78384 frames in 12 views. The remaining 90 video clips are used as the test set. 
+  
+  Table 7 lists the PCP scores and Table 8 lists the MPJPE scores of PSS and VoxelPose methods on the MegaPose v1 test set after they are trained by MegaPose v1 training set. In these two tables, we also compare the results of PSS and VoxelPose methods using different training sets, which are Panoptic and MegaPose v1 training set, respectively. After PSS and VoxelPose methods are trained by MegaPose v1 training set, their performance has been improved. The average PCP score of PSS method is increased from 95.56 to 96.02. The average MPJPE score of PSS method is decreased from 32.80 to 28.68. The average PCP score of VoxelPose method is increased from 91.94 to 97.13. The average MPJPE score of 23.97 method is decreased from 31.53 to 23.97. Obviously, the performance of VoxelPose method has been significantly improved after it is trained by the MegaPose v1 training set.
+
+
+**Table 7. PCP scores of PSS and VoxelPose methods on the MegaPose v1 test set after they are trained by MegaPose v1 training set.**
+|Method|Training set|Badminton|Basketball|Football|Martial Art|Dance sport|Sanda|Taekwondo|Average|
+|---|---|---|---|---|---|---|---|---|---|
+|PSS|Panoptic|98.90|95.43|96.43|96.57|91.52|95.32|94.77|95.56| 
+|PSS|MegaPose v1 training set|99.05|95.81|96.98|96.60|93.44|95.77|94.52|96.02| 
+|VoxelPose|Panoptic|93.93|93.02|91.04|94.48|85.98|90.13|95.03|91.94| 
+|VoxelPose|MegaPose v1 training set|99.08|97.29|97.01|98.86|92.21|96.75|98.70|97.13| 
+
+
+**Table 8. MPJPE (mm) scores of PSS and VoxelPose methods on the MegaPose v1 test set after they are trained by MegaPose v1 training set.**
+|Method|Training set|Badminton|Basketball|Football|Martial Art|Dance sport|Sanda|Taekwondo|Average|
+|---|---|---|---|---|---|---|---|---|---|
+|PSS|Panoptic|24.73|30.70|28.54|37.29|44.71|32.17|31.48|32.80| 
+|PSS|MegaPose v1 training set|22.59|27.45|25.62|31.79|37.19|27.95|28.20|28.68|  
+|VoxelPose|Panoptic|26.48|29.87|28.99|30.65|47.95|30.36|26.42|31.53| 
+|VoxelPose|MegaPose v1 training set|20.55|22.65|22.53|23.14|34.62|22.91|21.38|23.97| 
+
+
 
 ## Datasetlink
 Temporarily not unavailable, comming soon:+1: <br/>
