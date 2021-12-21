@@ -11,12 +11,12 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
 
 |Sports category	|Single person (clips)	|Multi-person	(clips)|Subtotal	(clips)|Total number of frames|
 |---|---|---|---|---|
-|Rhythmic gymnastics	|37	|0	|37	|1,095,204|
+|Rhythmic Gymnastics	|37	|0	|37	|1,095,204|
 |Football  |17	|9	|26	|1,142,484|
 |Basketball	|8	|19	|27	|649,812|
-|Martial Art	|24	|3	|27	|1,096,068|
-|Aerobic gymnastics	|20	|0	|20	|687,588|
-|Dance sport	|12	|15	|27	|438,648|
+|Martial Arts	|24	|3	|27	|1,096,068|
+|Aerobic Gymnastics	|20	|0	|20	|687,588|
+|Dance Sport	|12	|15	|27	|438,648|
 |Taekwondo	|0	|47	|47	|391,428|
 |Sanda	|7	|2	|9	|613,836|
 |Badminton	|6	|2	|8	|1,149,912|
@@ -34,7 +34,7 @@ The goal of our MegaPose dataset is to introduce a new challenging and large-sca
   Table 7 lists the PCP scores and Table 8 lists the MPJPE scores of PSS and VoxelPose methods on the MegaPose v1 test set after they are trained by MegaPose v1 training set. In these two tables, we also compare the results of PSS and VoxelPose methods using different training sets, which are Panoptic and MegaPose v1 training set, respectively. After PSS and VoxelPose methods are trained by MegaPose v1 training set, their performance has been improved. The average PCP score of PSS method is increased from 95.56 to 96.02. The average MPJPE score of PSS method is decreased from 32.80 to 28.68. The average PCP score of VoxelPose method is increased from 91.94 to 97.13. The average MPJPE score of 23.97 method is decreased from 31.53 to 23.97. Obviously, the performance of VoxelPose method has been significantly improved after it is trained by the MegaPose v1 training set.
 
 Table 7. PCP scores of PSS and VoxelPose methods on the MegaPose v1 test set after they are trained by MegaPose v1 training set.
-|Method|Training set|Badminton|Basketball|Football|Martial Arts|Dance sport|Sanda|Taekwondo|Average|
+|Method|Training set|Badminton|Basketball|Football|Martial Arts|Dance Sport|Sanda|Taekwondo|Average|
 |---|---|---|---|---|---|---|---|---|---|
 |PSS|Panoptic|98.90|95.43|96.43|96.57|91.52|95.32|94.77|95.56| 
 |PSS|MegaPose v1 training set|99.05|95.81|96.98|96.60|93.44|95.77|94.52|96.02| 
@@ -42,7 +42,7 @@ Table 7. PCP scores of PSS and VoxelPose methods on the MegaPose v1 test set aft
 |VoxelPose|MegaPose v1 training set|99.08|97.29|97.01|98.86|92.21|96.75|98.70|97.13| 
 
 Table 8. MPJPE (mm) scores of PSS and VoxelPose methods on the MegaPose v1 test set after they are trained by MegaPose v1 training set.
-|Method|Training set|Badminton|Basketball|Football|Martial Arts|Dance sport|Sanda|Taekwondo|Average|
+|Method|Training set|Badminton|Basketball|Football|Martial Arts|Dance Sport|Sanda|Taekwondo|Average|
 |---|---|---|---|---|---|---|---|---|---|
 |PSS|Panoptic|24.73|30.70|28.54|37.29|44.71|32.17|31.48|32.80| 
 |PSS|MegaPose v1 training set|22.59|27.45|25.62|31.79|37.19|27.95|28.20|28.68|  
@@ -53,14 +53,14 @@ Table 8. MPJPE (mm) scores of PSS and VoxelPose methods on the MegaPose v1 test 
 In this subsection, we test the performance of PAM, PSS, VoxelPose methods on the 8-view MegaPose v1 test set. In the 12-view MegaPose v1 test set presented in subsection A1.1, we select 8-view data for test, which contains 90 8-view video clips. For the methods of PSS and VoxelPose, we use their models trained in subsection A1.1, which are trained in 12-view MegaPose v1 training set. Table 9 lists the PCP scores of PAM, PSS and VoxelPose methods on the 8-view MegaPose v1 test set. Table 10 lists the MPJPE scores of PAM, PSS and VoxelPose methods on the 8-view MegaPose v1 test set. It can be seen that the performance of these three methods on 8-view MegaPose v1 test set is slightly worse than that on 12-view MegaPose v1 test set.
 
 Table 9. PCP scores of PAM, PSS and VoxelPose methods on the 8-view MegaPose v1 test set.
-|Method|Badminton|Basketball|Football|Martial Arts|Dance sport|Sanda|Taekwondo|Average|
+|Method|Badminton|Basketball|Football|Martial Arts|Dance Sport|Sanda|Taekwondo|Average|
 |---|---|---|---|---|---|---|---|---|
 |PAM|97.46|92.89|95.72|94.42|90.65|91.23|94.59|93.85|  
 |PSS|98.63|94.11|96.51|95.31|90.89|94.02|94.26|94.82| 
 |VoxelPose|98.76|95.28|96.08|97.17|89.61|94.49|97.39|95.54| 
 
 Table 10. MPJPE (mm) scores of PAM, PSS and VoxelPose methods on the 8-view MegaPose v1 test set.
-|Method|Badminton|Basketball|Football|Martial Arts|Dance sport|Sanda|Taekwondo|Average|
+|Method|Badminton|Basketball|Football|Martial Arts|Dance Sport|Sanda|Taekwondo|Average|
 |---|---|---|---|---|---|---|---|---|
 |PAM|27.60|30.66|28.86|29.91|34.04|31.02|27.71|29.97|  
 |PSS|24.36|30.79|27.31|33.51|40.72|29.69|28.84|30.75| 
@@ -75,7 +75,7 @@ In this subsection, we evaluate several SOTA SVSP methods on the MegaPose v1 inc
 In MegaPose v1, 8 kinds of sports have single-person data, and there are 131 single-person video clips. We direct use their source code to conduct experiments without using part of MegaPose v1 data for training. That is, four SVSP methods are evaluated on all SVSP data in MegaPose v1.  Table 11 lists MPJPE scores of four SVSP methods on the MegaPose v1 SVSP data and Human3.6 dataset. It can be seen that on the MegaPose v1 SVSP data, the MPJPE scores of four SVSP methods are obviously larger than that on Human3.6M dataset. 
 
 Table 11. MPJPE (mm) scores of four SVSP methods on the MegaPose v1 SVSP data and Human3.6 dataset.
-|Method|Badminton|Basketball|Football|Martial Arts|Dance sport|Sanda|Aerobic gymnastics|Rhythmic gymnastics|Average|Human3.6M|
+|Method|Badminton|Basketball|Football|Martial Arts|Dance Sport|Sanda|Aerobic Gymnastics|Rhythmic Gymnastics|Average|Human3.6M|
 |---|---|---|---|---|---|---|---|---|---|---|
 |[Pose3D-RIE](https://github.com/paTRICK-swk/Pose3D-RIE)|164.96|270.07|261.02|209.50|177.24|183.28|213.91|202.71|210.34|30.1|
 |[PoseAug](https://github.com/jfzhang95/PoseAug)|168.12|227.34|237.89|212.09|177.69|164.43|220.27|197.11|200.63|38.2|
